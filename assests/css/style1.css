@@ -1,0 +1,56 @@
+body{
+    /*background-color: black;*/
+    overflow: hidden;
+}
+
+h1{
+    color: #920a0a;
+    position: relative;
+    left: 45vw;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Skranji', cursive;
+}
+
+.A{
+    width: 100px;
+    height: 100px;
+    /*background-color: black;*/
+    margin-right: 50px; /* 50px left and right margin */
+    display: inline-block; /* Make the divs appear in the same line */
+    position: relative;
+    top: 30vh;
+
+    color: #920a0a;
+    text-align: right;
+    font-size: x-large;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Skranji', cursive;
+}
+
+.A>img{
+    width: 150px;
+}
+
+#house{
+    width: 510px;
+    aspect-ratio: 1/1;
+    margin: 0;
+    position: relative;
+    left: 70vw;
+    bottom: 15vh;
+}
+
+h2:first-child{
+
+}
+
+/*.A:first-child{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: #e685b5;*/
+/*}*/
+
+
+/*div:first-child{*/
+/*    color: #0a53be;*/
+/*}*/

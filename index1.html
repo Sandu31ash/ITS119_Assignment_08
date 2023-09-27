@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+
+    <link rel="stylesheet" href="../assests/css/normalize.css">
+    <link rel="stylesheet" href="assests/css/style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Skranji&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>JS Que</h1>
+
+<button type="button">Start</button>
+
+<!--<h2>A1</h2>-->
+<!--<h2>A2</h2>-->
+
+<div class="A"><h4>A</h4><img src="assests/images/girl.gif" alt="girl"></div>
+<div class="A"><h4>B</h4><img src="assests/images/girl.gif" alt="girl"></div>
+<div class="A"><h4>C</h4><img src="assests/images/girl.gif" alt="girl"></div>
+<div class="A"><h4>D</h4><img src="assests/images/girl.gif" alt="girl"></div>
+<div class="A"><h4>E</h4><img src="assests/images/girl.gif" alt="girl"></div>
+<div class="A"><h4>F</h4><img src="assests/images/girl.gif" alt="girl"></div>
+
+
+<div id="house"><img src="assests/images/house.gif" alt="girl"></div>
+
+<script src="./assests/js/lib/jquery.min.js"></script>
+
+<script>
+
+//    const myFunction1 = ()=>{
+//            var arr1 = new Array(6);
+//            arr1[0] = $(".A").first().text();
+//            arr1[1] = $(".A").eq(1).text();
+//            arr1[2] = $(".A").eq(2).text();
+//            arr1[3] = $(".A").eq(3).text();
+//            arr1[4] = $(".A").eq(4).text();
+//            arr1[5] = $(".A").eq(5).text();
+//
+//            while(true){
+//                var last = arr1[5];
+//                arr1.pop();
+//                arr1.unshift(last);
+//                $("h1").text("Hey");
+//                $(".A").first().text(arr1[0]);
+//                $(".A").eq(1).text(arr1[1]);
+//                $(".A").eq(2).text(arr1[2]);
+//                $(".A").eq(3).text(arr1[3]);
+//                $(".A").eq(4).text(arr1[4]);
+//                $(".A").eq(5).text(arr1[5]);
+//            }
+//
+//    }
+    //
+    // setInterval(myFunction1, 1000)
+
+    $("button").on('click', ()=>{
+       console.log("Clicked!");
+
+       var arr1 = new Array(6);
+        for (let x = 0; x<6; x++){
+
+
+            // $("h4").eq(5-x).text($("h4").eq(4-x).text());
+        }
+
+        $("h4").eq(5).text($("h4").eq(4).text());
+        $("h4").eq(4).text($("h4").eq(3).text());
+        $("h4").eq(3).text($("h4").eq(2).text());
+        $("h4").eq(2).text($("h4").eq(1).text());
+        $("h4").eq(1).text($("h4").eq(0).text());
+        $("h4").eq(0).text($("h4").eq(5).text());
+
+        // myFunction1();
+    });
+
+    // const myFunction1 = ()=>{
+    //     var arr1 = new Array(6);
+    //     arr1[0] = $(".A").first().text();
+    //     arr1[1] = $(".A").eq(1).text();
+    //     arr1[2] = $(".A").eq(2).text();
+    //     arr1[3] = $(".A").eq(3).text();
+    //     arr1[4] = $(".A").eq(4).text();
+    //     arr1[5] = $(".A").eq(5).text();
+    //
+    //     for (let a = 1; a<=100; a++){
+    //         var x = arr1[5];
+    //         arr1.pop();
+    //         arr1.unshift(x);
+    //     }
+    //
+    //     while(true){
+    //         var x = arr1[5];
+    //         arr1.pop();
+    //         arr1.unshift(x);
+    //      }
+    // }
+    //
+    // while(true){
+    //     myFunction1();
+    // }
+
+</script>
+
+</body>
+</html>

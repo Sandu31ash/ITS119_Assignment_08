@@ -1,0 +1,53 @@
+/*h1{*/
+/*    color: darkred;*/
+/*    position: absolute;*/
+/*    left: 45vw;*/
+/*    font-family: cursive;*/
+/*}*/
+
+/*#house>img{*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 35vh;*/
+/*}*/
+
+.girl{
+    margin-right: 10px;
+    display: inline-block;
+    background-color: black;
+}
+
+.girl>img{
+    width: 200px;
+    position: absolute;
+    top: 52vh;
+}
+
+/*.girl:first-child>img{*/
+/*    left: 10vw;*/
+/*}*/
+
+/*#girl1{*/
+/*    top: 0;*/
+/*}*/
+
+/*.girl:nth-child(2)>img{*/
+/*    !*top: 10px;*!*/
+/*    left: 15vw;*/
+/*}*/
+
+/*.girl:nth-child(3)>img{*/
+/*    left: 25vw;*/
+/*}*/
+
+/*.girl:nth-child(4)>img{*/
+/*    left: 35vw;*/
+/*}*/
+
+/*.girl:nth-child(5)>img{*/
+/*    left: 45vw;*/
+/*}*/
+
+/*.girl:nth-child(6)>img{*/
+/*    left: 55vw;*/
+/*}*/
