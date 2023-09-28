@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+
+    <link rel="stylesheet" href="../assests/css/normalize.css">
+    <link rel="stylesheet" href="../assests/css/style2.css">
+
+</head>
+<body>
+
+<div></div>
+<div class="div1"></div>
+<div class="div1"></div>
+<div class="div1"></div>
+<div class="div1"></div>
+<div class="div1"></div>
+<div class="div1"></div>
+
+
+<script src="./assests/js/lib/jquery.min.js"></script>
+
+<script>
+
+    // var arr = ["#FFBFCD", "#EE82EF", "red", "green", "blue", "yellow"];
+
+    var arr1 = new Array();
+
+    for (let x = 0; x<=5; x++){
+
+        var l = $(".div1").eq(x).css("background-color");
+        arr1.push(l);
+
+    }
+
+    const myFunction1 = () => {
+        var last = arr1[5];
+        arr1.pop();
+        arr1.unshift(last);
+
+        for (let x = 0; x < 6; x++) {
+            $(".div1").eq(x).css("background-color", arr1[x]);
+        }
+    }
+
+    setInterval(myFunction1, 500);
+
+</script>
+
+</body>
+</html>
