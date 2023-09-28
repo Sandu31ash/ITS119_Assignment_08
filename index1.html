@@ -16,7 +16,7 @@
 
 <h1>JS Que</h1>
 
-<button type="button">Start</button>
+<!--<button type="button">Start</button>-->
 
 <!--<h2>A1</h2>-->
 <!--<h2>A2</h2>-->
@@ -35,49 +35,161 @@
 
 <script>
 
-//    const myFunction1 = ()=>{
-//            var arr1 = new Array(6);
-//            arr1[0] = $(".A").first().text();
-//            arr1[1] = $(".A").eq(1).text();
-//            arr1[2] = $(".A").eq(2).text();
-//            arr1[3] = $(".A").eq(3).text();
-//            arr1[4] = $(".A").eq(4).text();
-//            arr1[5] = $(".A").eq(5).text();
-//
-//            while(true){
-//                var last = arr1[5];
-//                arr1.pop();
-//                arr1.unshift(last);
-//                $("h1").text("Hey");
-//                $(".A").first().text(arr1[0]);
-//                $(".A").eq(1).text(arr1[1]);
-//                $(".A").eq(2).text(arr1[2]);
-//                $(".A").eq(3).text(arr1[3]);
-//                $(".A").eq(4).text(arr1[4]);
-//                $(".A").eq(5).text(arr1[5]);
-//            }
-//
-//    }
-    //
-    // setInterval(myFunction1, 1000)
-// setInterval(myFunction1, 1000)
+    var arr1 = new Array();
 
-    $("button").on('click', ()=>{
-       console.log("Clicked!");
+    for (let x = 0; x<=5; x++){
 
-       var arr1 = new Array(6);
-        for (let x = 0; x<6; x++){
+        var l = $("h4").eq(x).text();
+        arr1.push(l);
 
+    }
 
-            // $("h4").eq(5-x).text($("h4").eq(4-x).text());
+    // $("button").on('click', ()=> {
+    //        console.log("Clicked!");
+
+    const myFunction1 = ()=> {
+
+        var last = arr1[5];
+        arr1.pop();
+        arr1.unshift(last);
+
+        for (let x = 0; x < 6; x++) {
+            $("h4").eq(x).text(arr1[x]);
         }
 
-        $("h4").eq(5).text($("h4").eq(4).text());
-        $("h4").eq(4).text($("h4").eq(3).text());
-        $("h4").eq(3).text($("h4").eq(2).text());
-        $("h4").eq(2).text($("h4").eq(1).text());
-        $("h4").eq(1).text($("h4").eq(0).text());
-        $("h4").eq(0).text($("h4").eq(5).text());
+    }
+
+    setInterval(myFunction1,2000);
+
+    // });
+
+
+    //    const myFunction1 = ()=>{
+    //            var arr1 = new Array(6);
+    //            arr1[0] = $(".A").first().text();
+    //            arr1[1] = $(".A").eq(1).text();
+    //            arr1[2] = $(".A").eq(2).text();
+    //            arr1[3] = $(".A").eq(3).text();
+    //            arr1[4] = $(".A").eq(4).text();
+    //            arr1[5] = $(".A").eq(5).text();
+    //
+    //            while(true){
+    //                var last = arr1[5];
+    //                arr1.pop();
+    //                arr1.unshift(last);
+    //                $("h1").text("Hey");
+    //                $(".A").first().text(arr1[0]);
+    //                $(".A").eq(1).text(arr1[1]);
+    //                $(".A").eq(2).text(arr1[2]);
+    //                $(".A").eq(3).text(arr1[3]);
+    //                $(".A").eq(4).text(arr1[4]);
+    //                $(".A").eq(5).text(arr1[5]);
+    //            }
+    //
+    //    }
+    //
+    // setInterval(myFunction1, 1000)
+    // setInterval(myFunction1, 1000)
+
+    var arr1 = new Array();
+
+    for (let x = 0; x<=5; x++){
+
+        var l = $("h4").eq(x).text();
+        arr1.push(l);
+
+    }
+
+    $("button").on('click', ()=> {
+        console.log("Clicked!");
+
+        // arr1[0] = "Hello";
+        // arr1[0] = $("h4").eq(0);
+        // arr1.push($("h4").eq(0));
+
+        // var l0 = $("h4").eq(0).text();
+        //
+        // arr1.push(l0);
+
+
+        // while(true){
+
+        // do {
+
+        // const myFunction1 = () => {
+
+        // for (let x = 0; x < 6; x++) {
+
+        // do{
+
+        var last = arr1[5];
+        arr1.pop();
+        arr1.unshift(last);
+
+        for (let x = 0; x < 6; x++) {
+            $("h4").eq(x).text(arr1[x]);
+        }
+
+        // }while (true);
+
+        // setTimeout(1000);
+
+        // if (x == 0) {
+        //     // $("h4").eq(0).text(arr1[5]);
+        // } else {
+        //     // $("h4").eq(x).text(arr1[x - 1]);
+        // }
+        // }
+
+        // }
+
+        // setInterval(myFunction1(),2000);
+
+        //
+        // $("h4").eq(5).text(arr1[4]);
+        // $("h4").eq(4).text(arr1[3]);
+        // $("h4").eq(3).text(arr1[2]);
+        // $("h4").eq(2).text(arr1[1]);
+        // $("h4").eq(1).text(arr1[0]);
+        // $("h4").eq(0).text(arr1[5]);
+
+
+
+        // }while(false);
+        // }
+
+
+
+        // for (let x = 5; x>=0; x--){
+        //     for (let y = 0; y<=5; y++){
+        //         var l = $("h4").eq(x).text();
+        //         $("h4").eq(y).text(l);
+        //
+        //     // $("h4").eq(5-x).text($("h4").eq(4-x).text());
+        //     }
+        // }
+
+        // var l0 = $("h4").eq(0).text();
+        // var l1 = $("h4").eq(1).text();
+        // var l2 = $("h4").eq(2).text();
+        // var l3 = $("h4").eq(3).text();
+        // var l4 = $("h4").eq(4).text();
+        // var l5 = $("h4").eq(5).text();
+        //
+        // $("h4").eq(5).text(l4);
+        // $("h4").eq(4).text(l3);
+        // $("h4").eq(3).text(l2);
+        // $("h4").eq(2).text(l1);
+        // $("h4").eq(1).text(l0);
+        // $("h4").eq(0).text(l5);
+
+
+        // $("h4").eq(5).text($("h4").eq(4).text());
+        // $("h4").eq(4).text($("h4").eq(3).text());
+        // $("h4").eq(3).text($("h4").eq(2).text());
+        // $("h4").eq(2).text($("h4").eq(1).text());
+        // $("h4").eq(1).text($("h4").eq(0).text());
+        // $("h4").eq(0).text($("h4").eq(5).text());
 
         // myFunction1();
     });
@@ -107,6 +219,8 @@
     // while(true){
     //     myFunction1();
     // }
+
+
 
 </script>
 
